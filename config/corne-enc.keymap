@@ -95,7 +95,7 @@
    &mt LSHFT LPAR   &kp Z    &kp X      &kp C          &kp V    &kp B       &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT RPAR
                              &kp C_PP   &mt LALT ESC   &kp RET  &mo LWR     &mo RSE  &kp SPACE &kp RCTL  &none
                         >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN> &inc_dec_kp PG_UP PG_DN>;
                         label = "Default";
                 };
                 lower_layer {
@@ -110,7 +110,7 @@
    &trans       &kp F6      &kp F7     &kp F8      &kp F9      &kp F10           &trans   &trans   &trans &trans    &trans   &trans
                             &kp C_PREV &trans      &trans      &trans            &trans   &trans  &trans &none
                         >;
-                        sensor-bindings = <&inc_dec_cp LC(PLUS) LC(MINUS)>;
+                        sensor-bindings = <&inc_dec_cp LC(PLUS) LC(MINUS)> &inc_dec_kp PG_UP PG_DN>;
                         label = "Lower";
                 };
 
@@ -126,7 +126,7 @@
    &trans       &none       &none      &none       &none       &none             &kp UNDER   &kp EQUAL   &kp LBKT   &kp RBKT &kp BSLH &trans
                             &kp C_NEXT &trans      &trans      &trans            &trans       &trans      &trans     &none
                         >;
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN> &inc_dec_kp PG_UP PG_DN>;
                         label = "Raise";
                 };
                 adjust_layer {
